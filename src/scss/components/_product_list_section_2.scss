@@ -1,0 +1,435 @@
+.produc_list {
+    .main {
+        .main_container {
+            background-color: $color-beige-2;
+            .section_02 {
+                background-color: $color-beige-2;
+                position: relative;
+                
+
+                @include media-query(tablet) {
+                    padding-top: 220px;
+                    padding-bottom: 300px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+
+                @include media-query(desktopLS) {
+                    padding-top: 160px;
+                    padding-bottom: 300px;
+                }
+
+                .card_container {
+                    position: relative;
+                    z-index: 10;
+                    display: flex;
+                    flex-direction: column;
+                    
+                    justify-content: center;
+                    margin: 0 auto;
+
+                    @include media-query(tablet) {
+                        flex-direction: row;
+                        max-width: 1350px;
+                        gap: 30px;
+                    }
+
+                    @include media-query(desktop) {
+                        gap: 100px;
+                    }
+
+                    .left,
+                    .right {
+                        width: 100%;
+                        height: 100%;
+
+                        @include media-query(tablet) {
+                            width: 500px;
+                            border-bottom-left-radius: 50px;
+                            border-bottom-right-radius: 50px;
+                        }
+                    }
+
+                    .left {
+                        background-color: $color-tomato;
+                        z-index: 500;
+
+                        .card_bottom {
+                            width: 100%;
+                            color: $color-white;
+                            padding: 30px 0;
+                            position: relative;
+
+                            .text1 {
+                                font-size: 40px;
+                                font-weight: $bold;
+                                margin-bottom: 0;
+                                text-align: center;
+                                max-width: 300px;
+                                margin: 0 auto;
+                                line-height: 1.2;
+                                margin-bottom: 15px;
+                                
+                            }
+
+                            .text2 {
+                                font-size: 35px;
+                                font-weight: $regular;
+                                margin-bottom: 0;
+                                text-align: center;
+                                max-width: 300px;
+                                margin: 0 auto;
+                                line-height: 1.2;
+                            }
+
+                            .separator{
+                                margin-top: 30px;
+                                margin-bottom: 30px;
+                                width: 100%;
+
+                                @include media-query(tablet) {
+                                    width: 90%;
+                                    margin: 20px auto;
+                                }
+                            }
+
+                            .text3 {
+                                font-size: 20px;
+                                font-weight: $regular;
+                                margin-bottom: 0;
+                                text-align: center;
+                                margin: 0 auto;
+                                line-height: 1.2;
+                            }
+
+                            .fire_container{
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-top: 15px;
+
+                                .fire{
+                                    width: 50px;
+                                    height: 50px;
+                                }
+                            }
+
+                            .button{
+                                margin: 20px auto;
+                            }
+
+                            .romb_container{
+                                display: none;
+                                
+                                @include media-query(tablet) {
+                                    display: block;
+                                    position: absolute;
+                                    top: 120%; 
+                                    left: 50%; 
+                                    transform: translate(-50%, -50%); 
+                                    min-width: 300px;
+                                    min-height: 300px;
+
+                                }
+
+                                @include media-query(desktopL) {
+                                    top: 110%;
+                                    left: 20%; 
+                                }
+
+                                @include media-query(desktopLS) {
+                                    top: 110%;
+                                    left: 10%;
+                                }
+                              
+                                .text{
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    width: 200px;
+                                    text-align: center;
+                                    margin-bottom: 0px;
+                                    font-size: 18px;
+                                    font-weight: $semibold;
+                                    font-family: "Bogart";
+
+                                }
+                    
+                                .romb{
+                                    width: 300px;
+                                    height: 300px;
+                                }
+                            }
+                        }
+                    }
+                    
+                    .mobile_romb_left{
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: -30px;
+                        margin-bottom: 30px;
+                        
+                        .romb{
+                            z-index: 600;
+                        }
+
+                        .text{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 230px;
+                            text-align: center;
+                            margin-bottom: 0px;
+                            margin-top: -30px;
+                            font-size: 26px;
+                            font-weight: $semibold;
+                            font-family: "Bogart";
+                            color: $color-white;
+                            z-index: 700;
+                        }   
+
+                        @include media-query(tablet) {
+                            display: none;
+                        }
+
+
+
+                        .leaf_left_mobile, .leaf_right_mobile {
+                            width: 300px;
+                                display: block;
+                                height: 300px;
+                                position: absolute;
+                            
+                            
+                            @include media-query(tablet) {
+                                display: none;
+                            }
+                        }
+                        
+                        .leaf_left_mobile{
+                            top: 0px;
+                            left: -110px;
+                            z-index: 200;
+                        }
+
+                        .leaf_right_mobile{
+                            bottom: -68px;
+                            right: -80px;
+                            z-index: 200;
+                        }
+                    }
+
+
+                    .right {
+                        background-color: $color-orange-2;
+                        z-index: 500;
+
+                        .card_top{
+                            position: relative;
+                            z-index: 100;
+
+
+                            .romb_container{
+                                display: none;
+                                
+
+                                @include media-query(tablet) {
+                                    display: block;
+                                    position: absolute;
+                                    z-index: 10000;
+                                    top: -20%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%); 
+                                    min-width: 300px;
+                                    min-height: 300px;
+
+                                }
+
+                                @include media-query(desktopL) {
+                                    top: -20%;
+                                    left: 80%;
+                                }
+
+                                @include media-query(desktopLS) {
+                                    top: 10%;
+                                    left: 95%;
+                                }
+                              
+                                .text{
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    width: 200px;
+                                    text-align: center;
+                                    margin-bottom: 0px;
+                                    font-size: 18px;
+                                    color: $color-blue;
+                                    font-weight: $semibold;
+                                    font-family: "Bogart";
+
+                                }
+                    
+                                .romb{
+                                    width: 300px;
+                                    height: 300px;
+                                }
+                            }
+                        }
+
+                        .card_bottom {
+                            width: 100%;
+                            color: $color-white;
+                            padding: 30px 0;
+                            
+
+                            .text1 {
+                                font-size: 40px;
+                                font-weight: $bold;
+                                margin-bottom: 0;
+                                text-align: center;
+                                max-width: 350px;
+                                margin: 0 auto;
+                                line-height: 1.2;
+                                margin-bottom: 15px;
+                            }
+
+                            .text2 {
+                                font-size: 35px;
+                                font-weight: $regular;
+                                margin-bottom: 0;
+                                text-align: center;
+                                max-width: 300px;
+                                margin: 0 auto;
+                                line-height: 1.2;
+                            }
+
+                            .separator{
+                                margin-top: 30px;
+                                margin-bottom: 30px;
+                                width: 100%;
+
+                                @include media-query(tablet) {
+                                    width: 90%;
+                                    margin: 20px auto;
+                                }
+                            }
+
+                            .text3 {
+                                font-size: 20px;
+                                font-weight: $regular;
+                                margin-bottom: 0;
+                                text-align: center;
+                                margin: 0 auto;
+                                line-height: 1.2;
+                            }
+
+                            .fire_container{
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-top: 15px;
+
+                                .fire{
+                                    width: 50px;
+                                    height: 50px;
+                                }
+                            }
+
+                            .button{
+                                margin: 20px auto;
+                            }
+
+                            
+                            
+                        }
+                    }
+
+                    .mobile_romb_right{
+
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: -30px;
+                        margin-bottom: 30px;
+
+                        .text{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 230px;
+                            text-align: center;
+                            margin-bottom: 0px;
+                            margin-top: -30px;
+                            font-size: 26px;
+                            font-weight: $semibold;
+                            font-family: "Bogart";
+                            color: $color-blue;
+                            z-index: 700;
+                        }   
+
+                        .romb{
+                            z-index: 600;
+                        }
+
+                        @include media-query(tablet) {
+                            display: none;
+                        }
+                    }
+                }
+
+                .leaf_left{
+                    display: none;
+
+                    @include media-query(tablet) {
+                        display: block;
+                        position: absolute;
+                        width: 800px;
+                        height: 800px;
+                        top: 133px;
+                        
+                        left: -200px;
+                        z-index: 1;
+                    }
+
+                    @include media-query(desktopL) {
+                        top: 528px;
+                    }
+
+                    @include media-query(desktopXXL) {
+                        width: 1000px;
+                        height: 1000px;
+                    }
+                }
+
+                .leaf_right{
+                    display: none;
+
+                    @include media-query(tablet) {
+                        display: block;
+                        position: absolute;
+                        width: 800px;
+                        height: 800px;
+                        top: 774px;
+                        right: -200px;
+                        z-index: 1;
+                    }
+
+                    @include media-query(desktopXXL) {
+                        width: 1000px;
+                        height: 1000px;
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+.text-body-primary {
+  font-size: 2.7rem;
+  font-weight: $medium;
+}
+
+.text-body-second {
+  font-size: 2.5rem;
+}
+
+.text-body-third {
+  font-size: 1.4rem;
+}
+
+[class^="text-title-"] {
+  font-weight: $extrabold;
+}
+
+.text-title-primary {
+  font-size: 2.5rem;
+  
+  @include media-query(tablet) {
+    font-size: 3rem;
+  }
+  @include media-query(desktop) {
+    font-size: 4rem;
+  }
+
+  &--yellow {
+    color: $color-gold;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}
+
+.text-title-secondary {
+  font-size: 3rem;
+}
+
+.text-title-third {
+  font-size: 2rem;
+}
+
+.text-subtitle-primary {
+  font-size: 2rem;
+  font-weight: $regular;
+}
+
+.text-paragraph {
+  font-size: 1.7rem;
+  font-weight: $medium;
+
+  &--light {
+    font-weight: $light;
+  }
+
+  &--regular{
+    font-weight: $regular;
+  }
+
+  &--semibold {
+    font-weight: $bold;
+  }
+
+  &--bold {
+    font-weight: $bold;
+  }
+
+  &--yellow {
+    color: $color-gold;
+  }
+}
+
+.text-green{
+  color: $color-green;
+}
+
+.text-blue{
+  // color: $color-bright-blue;
+}
+
+.text-yellow{
+  color: $color-gold;
+}
+
+.text-white{
+  color: $color-white;
+}
+.font{
+ 
+  &-bold{
+    font-weight: 900;
+  }
+
+  &-semi-bold{
+    font-weight: 700;
+  }
+
+  &-medium{
+    font-weight: 500;
+  }
+
+  &-light{
+    font-weight: 200;
+  }
+  
+}
+
+.description{
+  color:$color-dark-gray;
+}

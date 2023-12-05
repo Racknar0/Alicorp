@@ -1,0 +1,33 @@
+{
+  "name": "admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.common.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "rimraf dist && webpack --mode development",
+    "start": "webpack serve --open --port 3000",
+    "watch": "webpack --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "babel-loader": "^9.1.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "dart-sass": "^1.25.0",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "sass-loader": "^13.3.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.0",
+    "sweetalert2": "^11.7.27"
+  }
+}

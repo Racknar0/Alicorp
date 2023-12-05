@@ -1,0 +1,102 @@
+// .form_container{
+//     background-color: $color-white;
+//     padding: 40px;
+//     max-width: 1920px;
+
+//     .title{
+//         font-size: 20px;
+//         font-weight: 600;
+//         color: $color-dark-blue2;
+//         margin-bottom: 20px;
+//     }
+
+//     .title_datos_basicos{
+//         font-size: 15px;
+//     }
+
+//     .form_input_container{
+//         display: flex;
+//         flex-direction: column;
+//         margin-bottom: 10px;
+
+//         .error_container{ 
+//             border: 1px solid $color-red;
+//             padding: 10px;
+    
+//             p{
+//                 font-size: 11px;
+//                 font-weight: 600;
+//                 color: $color-red;
+//                 margin: 0;
+//             }
+//         }
+
+//         // clase error para el input
+        
+//             input{
+
+//                 &.input_error{
+//                     border: 1px solid $color-red;
+//                 }
+//             }
+
+//             select{
+
+//                 &.input_error{
+//                     border: 1px solid $color-red;
+//                 }
+//             }
+
+//             textarea{
+
+//                 &.input_error{
+//                     border: 1px solid $color-red;
+//                 }
+//             }
+       
+
+//     }
+
+//     label {
+//         font-size: 11px;
+//         font-weight: 600;
+//         color: $color-gray;
+//     }
+
+//     input {
+//         border: 1px solid $color-light-gray2;
+//         height: 38px;
+//     }
+
+//     select {
+//         border: 1px solid $color-light-gray2;
+//         height: 38px;
+//     }
+
+//     .required_mark {
+//         font-size: 11px;
+//         font-weight: 600;
+//         color: $color-red; /* Reemplaza esto con tu color rojo */
+//     }
+
+//     .back_arrow_link{
+//         color: $color-dark-blue2;
+//         display: inline-block;
+//         margin-bottom: 20px;
+//         svg{
+//             cursor: pointer;
+//         }
+
+//         &:hover{
+//             color: $color-bright-blue;
+//         }
+//     }
+
+    
+
+// }
+
+// // user swal2-shown swal2-height-auto
+// .user.swal2-shown.swal2-height-auto{
+//     height: 100vh !important;
+// }

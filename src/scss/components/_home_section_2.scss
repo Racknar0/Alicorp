@@ -1,0 +1,114 @@
+.home {
+    .main {
+        .section_02 {
+            background-color: $color-beige;
+            padding-bottom: 50px;
+            padding-top: 50px;
+
+            .text_container {
+                position: relative;
+                .float_btn {
+                    display: none;
+
+                    @include media-query(tablet) {
+                        display: block;
+                        position: absolute;
+                        width: 120px;
+                        height: 35px;
+                        background-color: $color-blue;
+                        top: -30px;
+                        right: 10%;
+                        border-top-right-radius: 10px;
+                        border-top-left-radius: 10px;
+                        //Shadow solo arriba
+                        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 6px;
+
+                        cursor: pointer;
+
+                        p {
+                            color: $color-white;
+                            font-size: 17px;
+                            margin-bottom: 0px;
+                        }
+
+                        @include media-query(desktopL) {
+                            top: 0px;
+                            margin-top: 15px;
+                        }
+
+                        //Hover
+                        &:hover {
+                            background-color: $color-white;
+                            color: $color-blue;
+                            svg {
+                                display: none;
+                            }
+
+                            p {
+                                color: $color-blue;
+                                font-weight: $bold;
+                            }
+                        }
+                    }
+                }
+
+                .text {
+                    text-align: center;
+                    font-size: 55px;
+                    color: $color-blue;
+                    font-weight: $bold;
+                    margin-bottom: 0px;
+                    line-height: 1.1;
+                    max-width: 700px;
+                    margin: 0 auto;
+                    padding-bottom: 40px;
+
+                    span {
+                        color: $color-orange;
+                    }
+                }
+            }
+
+            .icons_container {
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 500px;
+                margin: 0 auto;
+                padding-top: 50px;
+
+                .icon_container {
+                    width: 50%;
+
+                    .icon {
+                        width: 100%;
+                        height: 70px;
+                    }
+
+                    .icon_text {
+                        font-size: 30px;
+                        color: $color-blue;
+                        font-weight: $bold;
+                        margin-top: 10px;
+                        text-align: center;
+                    }
+                }
+
+                @include media-query(tablet) {
+                    max-width: 1000px;
+                    margin: 0 auto;
+                    justify-content: space-between;
+                    align-items: flex-end;
+
+                    .icon_container {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}

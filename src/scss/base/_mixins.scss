@@ -1,0 +1,56 @@
+// Mediaqueries
+@mixin media-query($media-query) {
+  @if $media-query == mobilex {
+    @media only screen and (min-width: $mobilex) { @content; }
+  }
+  @if $media-query == maxmobilex {
+    @media only screen and (max-width: $mobilex) { @content; }
+  }
+  @if $media-query == mobilexl {
+    @media only screen and (min-width: $mobilexl) { @content; }
+  }
+  @if $media-query == maxmobilexl {
+    @media only screen and (max-width: $mobilexl) { @content; }
+  }
+  @if $media-query == mobile {
+    @media only screen and (min-width: $mobile) { @content; }
+  }
+  @if $media-query == maxmobile {
+    @media only screen and (max-width: $mobile) { @content; }
+  }
+  @if $media-query == tablet {
+    @media only screen and (min-width: $tablet) { @content; }
+  }
+  @if $media-query == maxtablet {
+    @media only screen and (max-width: $tablet) { @content; }
+  }
+  @if $media-query == desktop {
+    @media only screen and (min-width: $desktop) { @content; }
+  }
+  @if $media-query == maxdesktop {
+    @media only screen and (max-width: $desktop) { @content; }
+  }
+  @if $media-query == desktopL {
+    @media only screen and (min-width: $desktopL) { @content; }
+  }
+  @if $media-query == maxdesktopL {
+    @media only screen and (max-width: $desktopL) { @content; }
+  }
+  @if $media-query == desktopLS {
+    @media only screen and (min-width: $desktopLS) { @content; }
+  }
+  @if $media-query == maxdesktopLS {
+    @media only screen and (max-width: $desktopLS) { @content; }
+  }
+  @if $media-query == desktopXL {
+    @media only screen and (min-width: $desktopXL) { @content; }
+  }
+  @if $media-query == maxdesktopXL {
+    @media only screen and (max-width: $desktopXL) { @content; }
+  }
+
+  @if $media-query == desktopXXL {
+    @media only screen and (min-width: $desktopXXL) { @content; }
+  }
+
+}

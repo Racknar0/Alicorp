@@ -1,0 +1,160 @@
+// Importar fuentes Bogart
+
+
+@font-face {
+    font-family: 'Bogart';
+    src:url('./assets/fonts/Bogart-LightItalic.otf') format('opentype');
+    font-weight: 300; // Light
+    font-style: italic;
+  }
+
+
+@font-face {
+    font-family: 'Bogart';
+    font-style: normal;
+    src: url('./assets/fonts/Bogart-LightItalic.otf')  format('opentype');
+    font-weight: 400; // Italic
+    font-style: italic;
+  }
+
+
+  
+@font-face {
+    font-family: 'Bogart';
+    font-style: normal;
+    src: url('./assets/fonts/Bogart-Regular.otf')  format('opentype');
+    font-weight: 400; // Regular
+  }
+  
+  
+  @font-face {
+    font-family: 'Bogart';
+    src:url('./assets/fonts/Bogart-Medium.otf') format('opentype');
+    font-weight: 500; // Medium
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Bogart';
+    src:url('./assets/fonts/Bogart-MediumItalic.otf') format('opentype');
+    font-weight: 500; // Medium
+    font-style: italic;
+  }
+  
+
+  
+  @font-face {
+    font-family: 'Bogart';
+    src:url('./assets/fonts/Bogart-Semibold.otf') format('opentype');
+    font-weight: 600; // Semibold
+  }
+
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+
+
+body {
+    font-family: 'Bogart', sans-serif;
+    font-weight: $regular;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.p-line-height {
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    // height: 100vh;
+    padding-top: 3rem;
+
+    &.section--with-header {
+        padding-top: 0rem;
+    }
+}
+b {
+    font-weight: bold;
+}
+.height-100-view {
+    height: 100vh;
+}
+
+.height-100-porcentaje {
+    height: 100%;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.overhidden {
+    overflow: hidden;
+}
+
+.link {
+    text-decoration: none;
+    // color: $color-dark-blue;
+}
+
+.box-shadow-primary {
+    box-shadow: 0 0 1.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.border-2 {
+    border-top: 2px solid $color-white;
+    border-bottom: 2px solid $color-white;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+.mb-15 {
+    margin-bottom: 1.5rem;
+}
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.pt {
+    &-1 {
+        padding-top: 1rem;
+    }
+
+    &-2 {
+        padding-top: 2rem;
+    }
+}
+
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    .main {
+        background-color: $color-beige;
+        overflow-x: hidden;
+        margin-top: -10px;
+    }
+}

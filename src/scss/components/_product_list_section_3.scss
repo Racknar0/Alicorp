@@ -1,0 +1,30 @@
+.produc_list {
+    .main {
+        .main_container {
+            background-color: $color-beige-2;
+            .section_03 {
+                .main_text{
+                    position: relative;
+                    font-size: 65px;
+                    max-width: 1000px;
+                    margin: 0 auto;
+                    text-align: center;
+                    z-index: 200;
+                    color: $color-blue;
+                    line-height: 1.2;
+
+                    span{
+                        color: $color-orange;
+                    }
+                }
+
+                .map{
+                    display: block;
+                    margin: 0 auto;
+                    margin-top: 80px;
+                    padding-bottom: 100px;
+                }
+            }
+        }
+    }
+}

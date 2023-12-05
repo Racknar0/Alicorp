@@ -1,0 +1,65 @@
+// .table_container {
+//     overflow-x: scroll;
+//     padding: 0 20px 0 10px;
+//     background-color: $color-white;
+
+//     table {
+//         thead {
+//             border-bottom: 1px solid $color-light-gray2;
+
+//             th {
+//                 color: $color-dark-blue;
+//                 border: none;
+//                 vertical-align: middle;
+//                 font-size: 16px;
+//             }
+
+//             // el ultimo th
+//             th:last-child {
+//                div {
+//                 margin-left: auto;
+//                 margin-right: auto;
+//                }
+//             }
+//         }
+
+//         tbody {
+//             tr {
+//                 td {
+//                     min-width: 110px;
+//                     color: $color-gray;
+//                     vertical-align: middle;
+//                     font-size: 16px;
+//                 }
+
+//                 // el ultimo td
+//                 td:last-child {
+//                    div {
+//                     margin-left: auto;
+//                     margin-right: auto;
+//                    }
+//                 }
+//             }
+//         }
+//     }
+
+//     .delete-button{
+//         &:active{
+//             color: #707070;
+//             background-color: #F2F2F2;
+//             background: none;
+//         }
+
+//         &:focus{
+//             color: #707070;
+//             background-color: #F2F2F2;
+//             background: none;
+//         }
+
+//         &:hover{
+//             color: $color-dark-blue;
+//             background-color: #F2F2F2;
+//             background: none;
+//         }
+//     }
+// }

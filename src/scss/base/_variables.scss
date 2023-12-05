@@ -1,0 +1,50 @@
+// Bootstrap variables
+
+// override default bootstrap colors for accessibility
+
+// Whites
+$color-white: #ffffff;
+$color-beige: #f5f5f5;
+$color-beige-2: #FDF3E9;
+$color-light-gray2: #dbdbdb;
+$color-pale-pink: #f2dede;
+
+// Blues
+$color-blue: #192BFF;
+
+
+// Grays
+$color-gray: #707070;
+$color-dark-gray: #4f4e4e;
+$color-black-gray: #222222;
+
+// Others
+$color-gold: #fccd4f;
+$color-gold-1: #fecc20;
+$color-purple: #C100B7;
+$color-orange: #F3871C;
+$color-orange-2: #ff8617;
+$color-green: #54c954;
+$color-lime: #D1FF03;
+$color-tomato: #ff4438;
+
+
+// ==================== BREAKPOINTS ====================
+$mobilex: 375px !default;
+$mobilexl: 480px !default; 
+$mobile: 576px !default;
+$tablet: 768px !default;
+$desktop: 992px !default;
+$desktopL: 1200px !default;
+$desktopLS: 1440px !default;
+$desktopXL: 1600px !default;
+$desktopXXL: 1920px !default;
+
+
+// ==================== FONT WEIGHTS ====================
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;

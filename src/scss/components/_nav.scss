@@ -1,0 +1,109 @@
+body {
+    position: relative;
+
+    header {
+        //background-color: $color-blue;
+        z-index: 100;
+
+        background-image: url('../../../dist/assets/images/nav_pattern.svg');
+        background-size: auto 120px;
+        width: 100%;
+        height: 100px;
+        background-repeat: repeat-x;
+        background-position: center bottom;
+        position: relative;
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+
+            &.navbar {
+                background-image: url('../../../dist/assets/images/nav_pattern.svg');
+                background-color: $color-blue;
+                background-repeat: no-repeat;
+                background-position: center bottom;
+                
+
+                .navbar-brand {
+                    .logo_text {
+                        width: 90px;
+                    }
+                    .logo_image {
+                        width: 30px;
+                        margin-left: 10px;
+                    }
+                }
+
+                .navbar-toggler {
+                    border: none;
+                    background-color: transparent;
+                    outline: none;
+                    .navbar-toggler-icon {
+                        background-image: url('../../../dist/assets/images/icons/menu.svg');
+                        width: 40px;
+                        height: 30px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        fill: $color-white;
+                    }
+
+                    // Propiedad focus
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+
+                ul {
+                    li {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        @include media-query(desktop) {
+                            padding-top: 5px;
+                        }
+
+                        a {
+                            color: $color-white;
+                            padding: 0.5rem 1rem;
+                            transition: all 0.3s ease-in-out;
+                            font-size: 20px;
+                            &:hover {
+                                color: $color-gold;
+                            }
+                        }
+                    }
+
+                    .logo_container {
+                        display: none;
+
+                        @include media-query(desktop) {
+                            display: flex;
+                            flex-direction: row-reverse;
+                            padding-top: 0px;
+                        }
+
+                        .logo_text {
+                            width: 110px;
+                        }
+
+                        .logo_image {
+                            width: 35px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*  .hola{
+        width: 100%;
+        height: 100px;
+        background-color: red;
+        
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    } */
+}

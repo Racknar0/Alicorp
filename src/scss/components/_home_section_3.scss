@@ -1,0 +1,188 @@
+.home {
+    .main {
+        .section_03 {
+            background-color: $color-lime;
+            padding-top: 80px;
+            padding-bottom: 80px;
+
+            .section_03_container{
+                max-width: 1300px;
+                margin: 0 auto;
+                padding-left: 15px;
+                padding-right: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column-reverse;
+
+                @include media-query(desktop) {
+                    flex-direction: row;
+                }
+
+                .section_03_A{
+                    width: 100%;
+                    padding-left: 15px;
+
+                    @include media-query(desktop) {
+                        width: 30%;
+                        padding-left: 0px;
+                    }
+
+                    .title{
+                        font-size: 40px;
+                        width: 340px;
+                        color: $color-blue;
+                        font-weight: $bold;
+                        margin-bottom: 0px;
+                        line-height: 1.1;
+                        max-width: 700px;
+                        padding-bottom: 20px;
+
+                        @include media-query(mobile) {
+                            font-size: 45px;
+                            width: 440px;
+                        }
+
+                        @include media-query(tablet) {
+                            font-size: 50px;
+                            width: 550px;
+                        }
+
+
+                        @include media-query(desktop) {
+                            font-size: 60px;
+                            width: 100%;
+                        }
+                    }
+
+                    .text{
+                        font-size: 20px;
+                        color: $color-blue;
+                        margin-bottom: 0px;
+                        padding-bottom: 20px;
+                        line-height: 1.1;
+                        max-width: 700px;
+                        padding-top: 20px;
+                        width: 90%;
+
+                        @include media-query(desktop) {
+                            font-size: 20px;
+                        }
+                    }
+
+                    .button{
+                        width: 250px;
+                        height: 60px;
+                        font-size: 25px;
+                        margin-top: 20px;
+                    }
+                }
+
+                .section_03_B{
+                    width: 100%;
+                    display: flex;
+                    padding-bottom: 30px;
+                    margin-right: -40px;
+                    
+
+                    @include media-query(desktop) {
+                        width: 70%;
+                        padding-bottom: 0px;
+                        padding-left: 40px;
+                        margin-right: 0px;
+                    }
+                    .left{
+                        position: relative;
+                        .bottle{
+                            position: absolute;
+                            bottom: -8%;
+                            left: -18%;
+                            z-index: 1;
+                            width: 60%;
+
+                            @include media-query(desktop) {
+                                bottom: -40px;
+                                left: -100px;
+                            }
+                        }
+
+                        .cart_container{
+                            display: none;
+                            @include media-query(desktop) {
+                                display: block;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                color: $color-white;
+                                width: 45px;
+                                height: 45px;
+                                background-color: $color-blue;
+                                z-index: 100;
+                                position: absolute;
+                                top: 47%;
+                                left: -17%;
+                                border-radius: 50%;
+                                cursor: pointer;
+
+                                //Hover
+                                &:hover {
+                                    background-color: $color-white;
+                                    color: $color-blue;
+                                }
+                            }
+
+                            @include media-query(desktopL) {
+                                left: -10%;
+                            }
+                        }
+                    }
+
+                    .right{
+                        position: relative;
+                        .bottle{
+                            position: absolute;
+                            bottom: -10%;
+                            left: -25%;
+                            z-index: 1;
+                            // Tomar el tamaño de left bottle
+                            width: 40%;
+                        }
+
+                        .cart_container{
+                            display: none;
+                            @include media-query(desktop) {
+                                display: block;
+                                display: flex;
+                                justify-content: center;
+                                color: $color-white;
+                                align-items: center;
+                                width: 45px;
+                                height: 45px;
+                                background-color: $color-blue;
+                                z-index: 100;
+                                position: absolute;
+                                bottom: 0px;
+                                left: -8%;
+                                border-radius: 50%;
+                                cursor: pointer;
+
+                                //Hover
+                                &:hover {
+                                    background-color: $color-white;
+                                    color: $color-blue;
+                                }
+
+                            }
+
+                            @include media-query(desktopL) {
+                                left: -5%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            
+        }
+    }
+}

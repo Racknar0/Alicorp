@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@import './base/variables';
+@import './base/buttons';
+@import './base/mixins';
+@import './base/tables';
+@import './base/forms';
+@import './base/filter';
+@import './base/base';
+@import './base/texts';
+@import './base/extends';
+@import './base/grid';
+@import './base/spinner';
+@import './components/nav';
+
+// Home
+@import './components/home_slider';
+@import './components/home_section_2';
+@import './components/home_section_3';
+
+
+// Produc list
+@import './components/product_list_section_1';
+@import './components/product_list_section_2';
+@import './components/product_list_section_3';
+
+
+// First Product
+@import './components/product_first_section_1';
+@import './components/product_first_section_2';

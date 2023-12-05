@@ -1,18 +1,14 @@
-body{
-    .breadcrumbs{
+body {
+    .breadcrumbs {
         display: none;
         @include media-query(tablet) {
             display: block;
             position: absolute;
-        top: 50px;
-        left: 50px;
-        color: $color-white;
-        font-family: "Montserrat", sans-serif;
-        color: $color-blue;
-            
+            top: 50px;
+            left: 50px;
+            color: $color-white;
+            font-family: 'Montserrat', sans-serif;
+            color: $color-blue;
         }
-        
-        
     }
-    
 }

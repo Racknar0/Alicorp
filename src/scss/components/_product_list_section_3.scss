@@ -12,6 +12,7 @@
                     z-index: 200;
                     color: $color-blue;
                     line-height: 1.2;
+                    font-weight: $bold;
 
                     span{
                         color: $color-orange;
@@ -19,10 +20,25 @@
                 }
 
                 .map{
-                    display: block;
-                    margin: 0 auto;
-                    margin-top: 80px;
-                    padding-bottom: 100px;
+                    display: none;
+
+                    @include media-query(tablet) {
+                        display: block;
+                        margin: 0 auto;
+                        margin-top: 80px;
+                        padding-bottom: 100px;
+                    }
+                    
+                    &.mobile {
+                        display: block;
+                        margin: 0 auto;
+                        margin-top: 80px;
+                        padding-bottom: 100px;
+
+                        @include media-query(tablet) {
+                            display: none;
+                        }
+                    }
                 }
             }
         }

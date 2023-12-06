@@ -1,0 +1,19 @@
+.banner{
+
+    // Imagen
+    &__img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // contenedr texto
+    &__txt{
+        text-align: center;
+    }
+
+
+    &.banner--thumbnail{
+
+    }
+}

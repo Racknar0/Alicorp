@@ -1,0 +1,11 @@
+.product-card{
+    position: relative;
+    padding: 38px 30px;
+
+    // Titulo
+    &__title{
+        font-family: 'Bogart';
+        font-weight: $semibold;
+        color: $color-blue;
+    }
+}

@@ -110,3 +110,134 @@
 .description{
   color:$color-dark-gray;
 }
+
+/* ==================== HEADINGS =================== */
+
+.heading {
+  &--1 {
+    font-family: 'Bogart';
+    font-weight: $semibold;
+    line-height: 1.125;
+    font-size: 2rem;
+
+    @include media-query(mintablet) {
+      font-size: 2.5rem;
+    }
+
+    @include media-query(mindesktop) {
+      font-size: 3rem;
+    }
+
+    @include media-query(mindesktopL) {
+      font-size: 3.6rem;
+    }
+
+    @include media-query(mindesktopXL) {
+      font-size: 4.8rem;
+    }
+
+    @include media-query(mindesktopXXL) {
+      font-size: 5.8rem;
+    }
+  }
+
+  &--2 {
+    line-height: 1.1;
+    font-size: 1.8rem;
+
+    @include media-query(mintablet) {
+      font-size: 2rem;
+    }
+
+    @include media-query(mindesktop) {
+      font-size: 2.5rem;
+    }
+
+    @include media-query(mindesktopL) {
+      font-size: 3rem;
+    }
+
+    @include media-query(mindesktopXL) {
+      font-size: 3.6rem;
+    }
+
+    @include media-query(mindesktopXXL) {
+      font-size: 4.8rem;
+    }
+  }
+
+  &--3 {
+    line-height: 1.1;
+    font-size: 1.6rem;
+
+    @include media-query(mintablet) {
+      font-size: 1.8rem;
+    }
+
+    @include media-query(mindesktop) {
+      font-size: 2rem;
+    }
+
+    @include media-query(mindesktopL) {
+      font-size: 2.5rem;
+    }
+
+    @include media-query(mindesktopXL) {
+      font-size: 3rem;
+    }
+
+    @include media-query(mindesktopXXL) {
+      font-size: 3.6rem;
+    }
+  }
+
+  &--4 {
+    line-height: 1.1;
+    font-size: 1.4rem;
+
+    @include media-query(mintablet) {
+      font-size: 1.6rem;
+    }
+
+    @include media-query(mindesktop) {
+      font-size: 1.8rem;
+    }
+
+    @include media-query(mindesktopL) {
+      font-size: 2rem;
+    }
+
+    @include media-query(mindesktopXL) {
+      font-size: 2.5rem;
+    }
+
+    @include media-query(mindesktopXXL) {
+      font-size: 3rem;
+    }
+  }
+
+  &--5 {
+    line-height: 1.1;
+    font-size: 1.2rem;
+
+    @include media-query(mintablet) {
+      font-size: 1.4rem;
+    }
+
+    @include media-query(mindesktop) {
+      font-size: 1.6rem;
+    }
+
+    @include media-query(mindesktopL) {
+      font-size: 1.8rem;
+    }
+
+    @include media-query(mindesktopXL) {
+      font-size: 2rem;
+    }
+
+    @include media-query(mindesktopXXL) {
+      font-size: 2.5rem;
+    }
+  }
+}

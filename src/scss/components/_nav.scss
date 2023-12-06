@@ -5,7 +5,7 @@ body {
         //background-color: $color-blue;
         z-index: 100;
 
-        background-image: url('../../../dist/assets/images/nav_pattern.svg');
+        background-image: url('./assets/images/nav_pattern.svg');
         background-size: auto 120px;
         width: 100%;
         height: 100px;
@@ -18,7 +18,7 @@ body {
             margin: 0 auto;
 
             &.navbar {
-                background-image: url('../../../dist/assets/images/nav_pattern.svg');
+                background-image: url('./dist/assets/images/nav_pattern.svg');
                 background-color: $color-blue;
                 background-repeat: no-repeat;
                 background-position: center bottom;

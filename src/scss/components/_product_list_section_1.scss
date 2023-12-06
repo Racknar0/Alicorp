@@ -43,12 +43,12 @@
                     color: $color-white;
                     font-size: 40px;
                     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-                    animation: marquee 20s linear infinite; /* 10s de duración, movimiento lineal, repetición infinita */
+                    animation: marqueeMobile 20s linear infinite; /* 10s de duración, movimiento lineal, repetición infinita */
                     display: inline-block;
 
                     @include media-query(desktop) {
                         font-size: 20px;
-                        animation: none;
+                        animation: marqueeDesktop 20s linear infinite; /* 10s de duración, movimiento lineal, repetición infinita */
                     }
 
                     @include media-query(desktopL) {
@@ -56,12 +56,20 @@
                         font-weight: 600;
                     }
 
-                    @keyframes marquee {
+                    @keyframes marqueeDesktop {
                         0% {
-                          transform: translateX(100%);
+                          transform: translateX(150%);
                         }
                         100% {
-                          transform: translateX(-100%);
+                          transform: translateX(-150%);
+                        }
+                      }
+                    @keyframes marqueeMobile {
+                        0% {
+                          transform: translateX(70%);
+                        }
+                        100% {
+                          transform: translateX(-80%);
                         }
                       }
                 }

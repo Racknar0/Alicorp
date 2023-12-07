@@ -24,9 +24,7 @@
                 .two,
                 .four,
                 .five {
-                    height: height(
-                        '.slider_container'
-                    ); // Utiliza la función height para obtener la altura de .three
+                    height: height( '.slider_container' ); // Utiliza la función height para obtener la altura de .three
                     width: 30px;
                     min-width: 30px;
                 }

@@ -22,60 +22,81 @@
                 }
               }
 
-            .separator_01{
-                width: 100%;
-                height: 70px;
+              .separator_01 {
                 background-color: $color-blue;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                @include media-query(desktop) {
+                .separator_01__container {
+                    width: 100%;
                     height: 70px;
-                    background-image: url('../../../dist/assets/images/product-list/separator_01.svg');
-                }
+                    display: flex;
+                    gap: 20px;
+                    justify-content: center;
+                    align-items: center;
 
-                p{
-                    margin-bottom: 0;
-                    color: $color-white;
-                    font-size: 40px;
-                    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-                    animation: marqueeMobile 20s linear infinite; /* 10s de duración, movimiento lineal, repetición infinita */
-                    display: inline-block;
+                    animation: marqueeMobile 30s linear infinite; /* 10s de duración, movimiento lineal, repetición infinita */
 
-                    @include media-query(desktop) {
-                        font-size: 20px;
-                        animation: marqueeDesktop 20s linear infinite; /* 10s de duración, movimiento lineal, repetición infinita */
+                    p {
+                        margin-bottom: 0;
+                        color: $color-white;
+                        font-size: 40px;
+                        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
                     }
 
-                    @include media-query(desktopL) {
-                        font-size: 27px;
-                        font-weight: 600;
+                    img {
+                        height: 30px;
+                        object-fit: cover;
                     }
-
-                    @keyframes marqueeDesktop {
-                        0% {
-                          transform: translateX(150%);
-                        }
-                        100% {
-                          transform: translateX(-150%);
-                        }
-                      }
-                    @keyframes marqueeMobile {
-                        0% {
-                          transform: translateX(70%);
-                        }
-                        100% {
-                          transform: translateX(-80%);
-                        }
-                      }
                 }
+            }
+
+            
+
+          @keyframes marqueeDesktop {
+              0% {
+                transform: translateX(150%);
+              }
+              100% {
+                transform: translateX(-150%);
+              }
+            }
+          @keyframes marqueeMobile {
+              0% {
+                transform: translateX(70%);
+              }
+              100% {
+                transform: translateX(-80%);
+              }
+            }
+
+
+            // .separator_01{
+            //     width: 100%;
+            //     height: 70px;
+            //     background-color: $color-blue;
+            //     background-repeat: no-repeat;
+            //     background-position: center;
+            //     background-size: contain;
+            //     display: flex;
+            //     justify-content: center;
+            //     align-items: center;
+
+            //     @include media-query(desktop) {
+            //         height: 70px;
+            //         background-image: url('../../../dist/assets/images/product-list/separator_01.svg');
+            //     }
+
+            //     p{
+            //         margin-bottom: 0;
+            //         color: $color-white;
+            //         font-size: 40px;
+            //         white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+            //         animation: marqueeMobile 30s linear infinite; /* 10s de duración, movimiento lineal, repetición infinita */
+            //         display: inline-block;
+
+                    
+            //     }
 
                 
-            }
+            // }
         }
     }
 }

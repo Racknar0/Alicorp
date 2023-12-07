@@ -2,13 +2,34 @@
 
 .first_product {
     .main {
-        .main_container{
+        .main_container {
             .section_01 {
-
             }
 
-            .separator_01{
-                
+            .separator_01 {
+                background-color: $color-purple;
+                .separator_01__container {
+                    width: 100%;
+                    height: 70px;
+                    display: flex;
+                    gap: 20px;
+                    justify-content: center;
+                    align-items: center;
+
+                    animation: marqueeMobile 30s linear infinite; /* 10s de duración, movimiento lineal, repetición infinita */
+
+                    p {
+                        margin-bottom: 0;
+                        color: $color-lime;
+                        font-size: 40px;
+                        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+                    }
+
+                    img {
+                        height: 30px;
+                        object-fit: cover;
+                    }
+                }
             }
         }
     }

@@ -1,4 +1,42 @@
-.button{
+/* ==================== BUTTONS =================== */
+
+// Sass Placeholder
+// https://medium.com/stories-from-the-keen/when-to-use-extends-vs-mixins-in-sass-b09d55abd53
+// https://sass-lang.com/documentation/style-rules/placeholder-selectors/
+
+%reset-btn {
+    // Reset styles
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+%button {
+    @extend %reset-btn;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5em; //50px
+    font-size: 20px;
+    transition: 0.3s color, 0.3s background-color, 0.3s border;
+    cursor: pointer;
+    border-radius: 2em; //40px
+
+    width: 100%;
+    min-width: 180px;
+    max-width: 384px;
+
+    @include media-query(tablet) {
+        width: auto;
+    }
+}
+
+.button {
     border: none;
     border-radius: 40px;
     width: 180px;
@@ -8,25 +46,40 @@
     align-items: center;
     // color: $color-white;
     font-size: 20px;
-}
 
-
-.button_filled {
-    background-color: $color-blue;
-    color: $color-white;
-    &:hover {
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-        background-color: $color-white;
-        color: $color-blue;
-    }
-}
-
-.button_white {
-    background-color: $color-white;
-    color: $color-blue;
-    &:hover {
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    &_filled {
         background-color: $color-blue;
         color: $color-white;
+    
+        &:hover {
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+            background-color: $color-white;
+            color: $color-blue;
+        }
+    }
+
+    &_white {
+        background-color: $color-white;
+        color: $color-blue;
+    
+        &:hover {
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+            background-color: $color-blue;
+            color: $color-white;
+        }
+    }
+
+    &_orange {
+        @extend %button;
+        background-color: $color-orange-3; 
+        color: $color-dark-gray-2;
+        border: 1px solid $color-orange-3;
+
+        &:hover {
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+            background-color: transparent;
+            color: $color-dark-gray-2;
+            border: 1px solid $color-dark-gray-2;
+        }
     }
 }

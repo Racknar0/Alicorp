@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
+// Owl Carousel
+@import "./libraries/owl.carousel";
+@import "./libraries/owl.theme.default";
+
+
+// BASE
 @import './base/variables';
-@import './base/buttons';
 @import './base/mixins';
+@import './base/base';
+@import './base/buttons';
 @import './base/tables';
 @import './base/forms';
 @import './base/filter';
-@import './base/base';
 @import './base/texts';
 @import './base/extends';
 @import './base/grid';
@@ -33,7 +39,11 @@
 
 // Molecules
 @import './components/molecules/product-card';
+@import './components/molecules/madein-card';
+@import './components/molecules/overlay-card';
 
 
 // Organisms
 @import './components/organisms/banner';
+@import './components/organisms/madein-block';
+@import './components/organisms/goeswith-block';

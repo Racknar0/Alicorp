@@ -2,10 +2,52 @@
     position: relative;
     padding: 38px 30px;
 
-    // Titulo
-    &__title{
-        font-family: 'Bogart';
-        font-weight: $semibold;
+    
+    &__title,
+    &__desc,
+    &__price{
         color: $color-blue;
+    }
+
+    // Descripción
+    &__desc{
+        font-weight: $regular;
+        font-size: 30px;
+    }
+
+    // Imagen aji
+    &__img{
+        position: relative;
+        
+        img{
+            max-width: 85px;
+            position: absolute;
+            top: -50px;
+            right: -10px;
+
+            @include media-query(tablet) {
+                right: -45px;
+            }
+
+            @include media-query(desktop) {
+                max-width: 100%;
+            }
+        }
+    }
+
+    // Precio
+    &__price{
+        font-size: 45px;
+        margin-top: 0.75em;
+        margin-bottom: 0.75em;
+
+        @include media-query(desktop) {
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+    }
+
+    // Contenedor ""Call to action"
+    &__call{
     }
 }

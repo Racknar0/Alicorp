@@ -1,66 +1,51 @@
 // Importar fuentes Bogart
 
-
 @font-face {
     font-family: 'Bogart';
-    src:url('./assets/fonts/Bogart-LightItalic.otf') format('opentype');
+    src: url('./assets/fonts/Bogart-LightItalic.otf') format('opentype');
     font-weight: 300; // Light
     font-style: italic;
-  }
-
+}
 
 @font-face {
     font-family: 'Bogart';
     font-style: normal;
-    src: url('./assets/fonts/Bogart-LightItalic.otf')  format('opentype');
+    src: url('./assets/fonts/Bogart-LightItalic.otf') format('opentype');
     font-weight: 400; // Italic
     font-style: italic;
-  }
+}
 
-
-  
 @font-face {
     font-family: 'Bogart';
     font-style: normal;
-    src: url('./assets/fonts/Bogart-Regular.otf')  format('opentype');
+    src: url('./assets/fonts/Bogart-Regular.otf') format('opentype');
     font-weight: 400; // Regular
-  }
-  
-  
-  @font-face {
+}
+
+@font-face {
     font-family: 'Bogart';
-    src:url('./assets/fonts/Bogart-Medium.otf') format('opentype');
+    src: url('./assets/fonts/Bogart-Medium.otf') format('opentype');
     font-weight: 500; // Medium
     font-style: normal;
-  }
-  
-  @font-face {
+}
+
+@font-face {
     font-family: 'Bogart';
-    src:url('./assets/fonts/Bogart-MediumItalic.otf') format('opentype');
+    src: url('./assets/fonts/Bogart-MediumItalic.otf') format('opentype');
     font-weight: 500; // Medium
     font-style: italic;
-  }
-  
+}
 
-  
-  @font-face {
+@font-face {
     font-family: 'Bogart';
-    src:url('./assets/fonts/Bogart-Semibold.otf') format('opentype');
+    src: url('./assets/fonts/Bogart-Semibold.otf') format('opentype');
     font-weight: 600; // Semibold
-  }
+}
 
-  
-
-  
-  @font-face {
+@font-face {
     font-family: 'Montserrat';
-    src:url('./assets/fonts/Montserrat-VariableFont_wght.ttf') format('opentype');
-  }
-
-
-
-
-
+    src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf') format('opentype');
+}
 
 * {
     padding: 0;
@@ -73,13 +58,17 @@ html {
     height: 100%;
 }
 
-
-
 body {
     font-family: 'Bogart', sans-serif;
     font-weight: $regular;
     overflow-x: hidden;
     position: relative;
+
+    .main {
+        background-color: $color-beige-2;
+        overflow-x: hidden;
+        margin-top: -10px;
+    }
 }
 
 .p-line-height {
@@ -99,9 +88,11 @@ section {
         padding-top: 0rem;
     }
 }
+
 b {
     font-weight: bold;
 }
+
 .height-100-view {
     height: 100vh;
 }
@@ -139,9 +130,11 @@ b {
 .mb-1 {
     margin-bottom: 1rem;
 }
+
 .mb-15 {
     margin-bottom: 1.5rem;
 }
+
 .mb-2 {
     margin-bottom: 2rem;
 }
@@ -156,13 +149,112 @@ b {
     }
 }
 
+// ==================== OWL CAROUSEL ====================
+.owl-carousel {
 
-body {
-    position: relative;
-    overflow-x: hidden;
-    .main {
-        background-color: $color-beige;
-        overflow-x: hidden;
-        margin-top: -10px;
-    }
+	// Navegación flechas carousel
+	>.owl-nav {
+		button {
+
+			&.owl-prev,
+			&.owl-next {
+				display: inline-flex;
+				justify-content: center;
+				align-items: center;
+				width: 58px;
+				height: 58px;
+				outline: none;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				background-color: $color-blue;
+				border-radius: 50%;
+				transition: all 300ms ease-in-out;
+
+				&:hover {
+					background-color: $color-lime;
+
+					svg{
+                        // https://angel-rs.github.io/css-color-filter-generator/
+                        // Para filtro color azul
+                        filter: brightness(0) saturate(100%) invert(22%) sepia(69%) saturate(3204%) hue-rotate(232deg) brightness(89%) contrast(142%);
+                    }
+				}
+
+				&.disabled {
+					display: none;
+				}
+
+				span {
+					display: none;
+					content: "";
+					font-size: 2.5rem;
+					font-size: 2.5rem;
+				}
+			}
+
+			&.owl-prev {
+				left: -2rem;
+			}
+
+			&.owl-next {
+				right: -2rem;
+			}
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+
+	// Navegación bullets
+	>.owl-dots {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 15px;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: -4.4rem;
+
+		&.disabled {
+			display: none;
+		}
+
+		button.owl-dot {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: transparent;
+			color: inherit;
+			border: none;
+			padding: 0 !important;
+			font: inherit;
+			width: 1.6rem;
+			height: 1.6rem;
+			border-radius: 50%;
+			position: relative;
+
+			span {
+				display: inline-block;
+				width: 1rem;
+				height: 1rem;
+				border-radius: 50%;
+				background-color: $color-blue;
+			}
+
+			&.active {
+				border: 1px solid $color-green;
+			}
+
+			&:hover {
+				background-color: $color-green;
+			}
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
 }

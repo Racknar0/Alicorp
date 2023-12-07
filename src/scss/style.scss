@@ -21,29 +21,27 @@
 @import './components/breadcrumbs';
 
 // Home
-@import './components/home_slider';
-@import './components/home_section_2';
-@import './components/home_section_3';
+@import './components/home/home_slider';
+@import './components/home/home_section_2';
+@import './components/home/home_section_3';
 
 
 // Produc list
-@import './components/product_list_section_1';
-@import './components/product_list_section_2';
-@import './components/product_list_section_3';
+
+@import './components/product-list/product_list_section_1';
+@import './components/product-list/product_list_section_2';
+@import './components/product-list/product_list_section_3';
 
 
 // First Product
-@import './components/product_first_section_1';
-@import './components/product_first_section_2';
-
-
-// Molecules
-@import './components/molecules/product-card';
-@import './components/molecules/madein-card';
-@import './components/molecules/overlay-card';
-
-
-// Organisms
-@import './components/organisms/banner';
-@import './components/organisms/madein-block';
-@import './components/organisms/goeswith-block';
+@import './components/product-first/product_first_section_1';
+@import './components/product-first/product_first_section_2';
+@import './components/product-first/product_first_section_6';
+// First Product - Molecules
+@import './components/product-first/molecules/product-card';
+@import './components/product-first/molecules/madein-card';
+@import './components/product-first/molecules/overlay-card';
+// First Product - Organisms
+@import './components/product-first/organisms/banner';
+@import './components/product-first/organisms/madein-block';
+@import './components/product-first/organisms/goeswith-block';

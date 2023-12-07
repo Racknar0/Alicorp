@@ -39,14 +39,13 @@
                         display: flex;
                         justify-content: center;
                         flex-direction: column;
-                        max-width: 500px;
+                        max-width: 600px;
                         margin: 0 auto;
                         position: relative;
                         z-index: 20;
                         margin-top: 130px;
 
                         @include media-query(tablet) {
-                           
                         }
 
                         @include media-query(desktop) {
@@ -77,7 +76,7 @@
                             @include media-query(tablet) {
                                 padding-top: 60px;
                                 padding-bottom: 60px;
-                                padding-left: 0px;
+                                padding-left: 40px;
                             }
 
                             @include media-query(desktop) {
@@ -85,6 +84,7 @@
                                 border: 30px solid $color-tomato;
                                 padding-top: 0px;
                                 padding-bottom: 0px;
+                                padding-left: 0px;
                                 align-items: center;
                             }
 
@@ -193,7 +193,7 @@
                             }
                         }
 
-                        .romb_left{
+                        .romb_left {
                             position: absolute;
                             // Centrar
                             top: 114%;
@@ -204,7 +204,7 @@
 
                             @include media-query(desktop) {
                                 top: 103%;
-                            left: 60%;
+                                left: 60%;
                             }
 
                             p {
@@ -222,7 +222,7 @@
                         }
                     }
 
-                    .minimap{
+                    .minimap {
                         position: absolute;
                         top: 50px;
                         right: 10px;
@@ -244,17 +244,17 @@
                         }
                     }
 
-                    .logoaji{
+                    .logoaji {
                         position: absolute;
                         top: 390px;
                         left: 120px;
                         z-index: 5;
-    
+
                         @include media-query(tablet) {
                             top: 305px;
                             left: 206px;
                         }
-    
+
                         @include media-query(desktop) {
                             top: 285px;
                         }
@@ -263,30 +263,91 @@
                             top: 225px;
                             left: 300px;
                         }
-    
-                        
-    
-                       
                     }
-
-                    
                 }
 
-                .leaf_left_1{
+                .leaf_left_1 {
                     position: absolute;
                     top: 0;
                     left: -200px;
                     z-index: 1;
+
+                    @include media-query(desktopXL) {
+                        left: -100px;
+                        top: 10px;
+                    }
+
+                    @include media-query(desktopXXL) {
+                        width: 650px;
+                    }
                 }
 
-                .leaft_right_1{
+                .leaf_left_2 {
+                    position: absolute;
+                    top: 939px;
+                    left: 273px;
+                    z-index: 1;
+
+                    @include media-query(tablet) {
+                        top: 731px;
+                        left: -459px;
+                    }
+
+                    @include media-query(desktop) {
+                        top: 390px;
+                    }
+
+                    @include media-query(desktopXXL) {
+                        top: 642px;
+                    }
+                }
+
+                .leaft_right_1 {
                     position: absolute;
                     top: 150px;
                     right: -300px;
                     z-index: 1;
+
+                    @include media-query(desktopXL) {
+                        top: -46px;
+                    }
+
+                    @include media-query(desktopXXL) {
+                        right: -100px;
+                        top: -50px;
+                        width: 650px;
+                    }
                 }
 
-                
+                .leaft_right_2 {
+                    position: absolute;
+                    top: 1407px;
+                    right: -200px;
+                    z-index: 1;
+                    transform: rotate(180deg);
+
+                    @include media-query(tablet) {
+                        top: 800px;
+                        right: -236px;
+                    }
+
+                    @include media-query(desktop) {
+                        top: 880px;
+                        right: -157px;
+                    }
+
+                    @include media-query(desktopXL) {
+                        transform: rotate(0deg);
+                        top: 832px;
+                        right: -7px;
+                    }
+
+                    @include media-query(desktopXXL) {
+                        top: 656px;
+                        right: 29px;
+                        width: 650px;
+                    }
+                }
             }
         }
     }

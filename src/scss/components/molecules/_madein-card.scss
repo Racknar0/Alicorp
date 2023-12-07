@@ -1,0 +1,221 @@
+.madein-card{
+    &--one,
+    &--two{
+        color: $color-blue;
+        text-align: center;
+    }
+
+    &--one,
+    &--sauce,
+    &--dish{
+        position: relative;
+    }
+    
+    // Carta con imagen rotada
+    &--one{
+
+        // Contenedor imagen
+        &__img{
+            img{
+                width: 100%;
+            }
+        }
+
+        &__desc1,
+        &__desc2{
+            font-family: 'Bogart';
+            font-weight: $semibold;
+            line-height: 1.125;
+            color: inherit;
+            position: absolute;
+            margin-bottom: 0;
+        }
+
+        // Descripción rotada
+        &__desc1{
+            top: 62%;
+            left: 15px;
+            transform: matrix(0.99, -0.16, 0.16, 0.99, 0, 0);
+            width: 40%;
+            font-size: 25px;
+
+            @include media-query(tablet) {
+                top: 48%;
+                width: 66%;
+            }
+
+            @media only screen and (min-width: 830px){
+                top: 54%;
+            }
+
+            @media only screen and (min-width: 900px){
+                top: 60%;
+            }
+
+            @include media-query(desktop) {
+                top: 46%;
+                width: 67%;
+            }
+
+            @include media-query(desktopL) {
+                top: 56%;
+            }
+
+            @include media-query(desktopLS) {
+                top: 66%;
+            }
+
+            // Icono lupa
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: -56px;
+                left: 0;
+                background-image: url('./assets/images/made-in-lupa.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 60px;
+                height: 60px;
+
+                @include media-query(tablet) {
+                    top: -12px;
+                    bottom: unset;
+                }
+            }
+        }
+
+        // Descripción 2
+        &__desc2{
+            left: 10%;
+            bottom: 0;
+            max-width: 56%;
+            display: none;
+            // font-size: clamp(30px, 56%, 60px);
+
+            @include media-query(tablet) {
+                display: block;
+                max-width: 80%;
+            }
+
+            @media only screen and (min-width: 830px){
+                bottom: -30px;
+            }
+
+            @include media-query(desktop) {
+                bottom: 10%;
+            }
+
+            @include media-query(desktopL) {
+                bottom: 1em;
+                max-width: 63%;
+                left: 5%;
+            }
+
+        }
+    }
+
+    // Carta con sello llama
+    &--two{
+        padding-inline: 15px;
+        padding-bottom: 50px;
+
+        // contenedor Sello llama
+        &__img{
+            margin-bottom: 16px;
+        }
+
+        // Titulo
+        &__title{
+            position: relative;
+            margin-bottom: 2.25em;
+
+            @include media-query(tablet) {
+                margin-bottom: 1.5em;
+            }
+
+            @include media-query(desktopLS) {
+                margin-bottom: 1em;
+            }
+
+            // Decoración rombos
+            &::after{
+                position: absolute;
+                bottom: -2em;
+                left: 50%;
+                transform: translateX(-50%);
+                content: '';
+                width: 195px;
+                height: 32px;
+                background-image: url('./assets/images/made-in-rombo-blue.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                @include media-query(tablet) {
+                    bottom: -0.75em;
+                }
+            }
+        }
+
+        // Descripción
+        &__desc{
+            font-weight: $regular;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            margin-inline: auto;
+            max-width: 80%;
+            
+            @include media-query(mobile) {
+                font-size: 24px;
+            }
+
+            @include media-query(desktopLS) {
+                font-size: 28px;
+            }
+        }
+
+    }
+
+    // Carta con foto salsa (background-color administrable)
+    &--sauce{
+        padding: 24px 31px 34px 62px;
+
+        // patron decorativo izq
+        &::after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 2;
+            content: '';
+            width: 38px;
+            height: 100%;
+            background-image: url('./assets/images/yellow-pattern-left.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    // Carta con foto plato (background-color administrable)
+    &--dish{
+        padding: 32px 0 35px 36px;
+
+        // patron decorativo derecha
+        &::after{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+            content: '';
+            width: 38px;
+            height: 100%;
+            background-image: url('./assets/images/yellow-pattern-right.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}

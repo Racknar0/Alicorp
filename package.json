@@ -28,6 +28,8 @@
   },
   "dependencies": {
     "chart.js": "^4.4.0",
+    "jquery": "^3.7.1",
+    "owl.carousel": "^2.3.4",
     "sweetalert2": "^11.7.27"
   }
 }

@@ -146,25 +146,61 @@
         <main class="main">
             <div class="main_container">
 
+                <!-- Banner-thumbnail -->
                 <section class="section_01 banner banner--thumbnail">
-                  <!-- banner item -->
                   <div class="banner__item">
                     <div class="container banner__container">
                       <div class="row">
                         <!-- banner image -->
                         <div class="banner__img col-md-6">
-                          <picture>
-                            <source media="(min-width:992px)" srcset="./src/assets/images/peruvian-rocoto-pepper-desktop.png">
-                            <img src="./src/assets/images/peruvian-rocoto-pepper-mobile.png" alt="Imagen Banner">
-                          </picture>
+
+                          <!-- Listado imagenes -->
+                          <div class="banner__img-list">
+                            <!-- ítem carousel -->
+                            <div class="banner__img-item" data-dot="<img src='./src/assets/images/100x100-Spicery.jpg'>">
+                              <picture>
+                                <source media="(min-width:992px)" srcset="./src/assets/images/peruvian-rocoto-pepper-desktop.png">
+                                <img src="./src/assets/images/peruvian-rocoto-pepper-mobile.png" alt="Imagen Banner">
+                              </picture>
+                            </div>
+                            <!-- END ítem carousel -->
+
+                            <!-- ítem carousel -->
+                            <div class="banner__img-item" data-dot="<img src='./src/assets/images/100x100-Eggs.jpg'>">
+                              <picture>
+                                <source media="(min-width:992px)" srcset="./src/assets/images/815x880-Eggs.jpg">
+                                <img src="./src/assets/images/384x370-Eggs.jpg" alt="Imagen Banner">
+                              </picture>
+                            </div>
+                            <!-- END ítem carousel -->
+
+                            <!-- ítem carousel -->
+                            <div class="banner__img-item" data-dot="<img src='./src/assets/images/100x100-Lecker.jpg'>">
+                              <picture>
+                                <source media="(min-width:992px)" srcset="./src/assets/images/815x880-Lecker.jpg">
+                                <img src="./src/assets/images/384x370-Lecker.jpg" alt="Imagen Banner">
+                              </picture>
+                            </div>
+                            <!-- END ítem carousel -->
+
+                            <!-- ítem carousel -->
+                            <div class="banner__img-item" data-dot="<img src='./src/assets/images/100x100-Spreewald.jpg'>">
+                              <picture>
+                                <source media="(min-width:992px)" srcset="./src/assets/images/815x880-Spreewald.jpg">
+                                <img src="./src/assets/images/384x370-Spreewald.jpg" alt="Imagen Banner">
+                              </picture>
+                            </div>
+                            <!-- END ítem carousel -->
+                          </div>
+                          <!-- END Listado imagenes -->
                         </div>
                         <!-- END banner image -->
                         <!-- banner text -->
                         <div class="banner__txt col-md-6">
                           <div class="product-card">
-                            <h1 class="product-card__title">
+                            <h2 class="product-card__title heading--1">
                               Peruvian Rocoto Pepper
-                            </h1>
+                            </h2>
                             <p class="product-card__desc">
                               Flavorful, peruvian Aji Rocoto pepper
                             </p>
@@ -175,7 +211,7 @@
                               $8.49 USD
                             </p>
                             <div class="product-card__call">
-                              <a href="#" class="button button_filled">
+                              <a href="#" class="button_orange">
                                 <span class="button__icon">
 
                                 </span>
@@ -191,9 +227,8 @@
 
                     </div>
                   </div>
-                  <!-- END banner item -->
-
                 </section>
+                <!-- END Banner-thumbnail -->
 
                 <div class="separator_01">
                  
@@ -207,13 +242,132 @@
                   
                 </div>
 
-                <div class="section_04">
-                  
-                </div>
+                <!-- Made in -->
+                <section class="section_04 madein-block">
+                  <!-- card 1 -->
+                  <article class="madein-card--one">
+                    <div class="madein-card--one__img">
+                      <picture>
+                        <source media="(min-width:768px)" srcset="./src/assets/images/made-in-desktop.png">
+                        <img src="./src/assets/images/made-in-mobile.png" alt="Made in Peru">
+                      </picture>
+                    </div>
+                    <p class="madein-card--one__desc1">
+                      Machu Picchu, one of the seven wonders of the world
+                    </p>
+                    <p class="madein-card--one__desc2 heading--5">
+                      Creamy Peruvian hot sauce: textures unlike anything you know!
+                    </p>
+                  </article>
+                  <!-- END card 1 -->
 
-                <div class="section_05">
+                  <!-- card 2 -->
+                  <article class="madein-card--two">
+                    <div class="madein-card--two__img">
+                      <img src="./src/assets/images/made-in-llama.svg" alt="LLama seal">
+                    </div>
+                    <h2 class="madein-card--two__title heading--2">
+                      Made in Peru
+                    </h2>
+                    <p class="madein-card--two__desc">
+                      A mild and tangy everything sauce based on aji amarillo, one of Peru´s most unique and  beloved ingredients. It is flavorful,versatile, and has a kick to it. 
+                      Try Tari, Peruvian amarillo pepper on everything!   
+                    </p>
+                  </article>
+                  <!-- END card 2 -->
+
+                  <!-- sauce card -->
+                  <!-- Nota para back, el color de fondo debe ser administrable -->
+                  <article class="madein-card--sauce" style="background-color: #C100B7;">
+                    <img src="./src/assets/images/made-in-sauce.png" alt="Sauce image">
+                  </article>
+                  <!-- END sauce card -->
+
+                  <!-- dish card -->
+                  <!-- Nota para back, el color de fondo debe ser administrable -->
+                  <article class="madein-card--dish" style="background-color: #FF4438;">
+                    <img src="./src/assets/images/TARI-PIZZA.png" alt="Dish image">
+                  </article>
+                  <!-- END dish card -->
+
+                </section>
+                <!-- END Made in -->
+
+                <!-- Goes with -->
+                <!-- Nota para back, el color de fondo debe ser administrable -->
+                <section class="section_05 goeswith-block" style="background-color: #C100B7;">
+                  <div class="container">
+
+                    <h2 class="goeswith-block__title heading--3">
+                      Goes with everything
+                    </h2>
+                    <!-- Listado -->
+                    <div class="goeswith-block__list">
+  
+                      <!-- overlay ítem -->
+                      <article class="overlay-card">
+                        <picture class="overlay-card__img">
+                          <source media="(min-width:768px)" srcset="./src/assets/images/AVOCADOTOAST.png">
+                          <img src="./src/assets/images/AVOCADOTOAST-mobile.png" alt="Dish image">
+                        </picture>
+                        <div class="overlay-card__overlay">
+                          <div class="overlay-card__content">
+                            <img class="overlay-card__icon" src="./src/assets/images/egg-lime.svg" alt="eggs icon">
+                            <p class="overlay-card__txt">
+                              Avocado Toast
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+                      <!-- END overlay ítem -->
+
+                      <!-- overlay ítem -->
+                      <article class="overlay-card">
+                        <picture class="overlay-card__img">
+                          <source media="(min-width:768px)" srcset="./src/assets/images/CHOCLO.png">
+                          <img src="./src/assets/images/hamburguer-mobile.png" alt="Dish image">
+                        </picture>
+                        <div class="overlay-card__overlay">
+                          <div class="overlay-card__content">
+                            <img class="overlay-card__icon" src="./src/assets/images/hamburguer-lime.svg" alt="hamburguer icon">
+                            <p class="overlay-card__txt">
+                              Hamburguer
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+                      <!-- END overlay ítem -->
+
+                      <!-- overlay ítem -->
+                      <article class="overlay-card">
+                        <picture class="overlay-card__img">
+                          <source media="(min-width:768px)" srcset="./src/assets/images/TARI10798.png">
+                          <img src="./src/assets/images/TARI10798-mobile.png" alt="Dish image">
+                        </picture>
+                        <div class="overlay-card__overlay">
+                          <div class="overlay-card__content">
+                            <img class="overlay-card__icon" src="./src/assets/images/taco-lime.svg" alt="taco icon">
+                            <p class="overlay-card__txt">
+                              Tacos
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+                      <!-- END overlay ítem -->
+  
+                    </div>
+                    <!-- END Listado -->
+  
+                    <div class="goeswith-block__call">
+                      <a href="#" class="button button_filled">
+                        View more
+                      </a>
+                    </div>
+
+                  </div>
                   
-                </div>
+                </section>
+                <!-- END Goes with -->
 
                 <div class="section_06">
                   
@@ -228,6 +382,8 @@
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
             crossorigin="anonymous"
         ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
         <!-- importar js -->
         <script src="./dist/js/main.min.js"></script>
     </body>

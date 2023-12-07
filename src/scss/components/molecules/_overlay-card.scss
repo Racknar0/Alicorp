@@ -1,0 +1,74 @@
+.overlay-card{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+
+    @include media-query(tablet) {
+        max-width: 536px;
+    }
+
+    // Imagen plato
+    &__img{
+        display: block;
+        width: 100%;
+        height: auto;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    // Overlay fondo azul
+    &__overlay{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba($color-blue, 0.6);
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        transform: scale(0);
+        transition: .3s ease;
+        border: 1px solid #707070;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* When you mouse over the card, the overlay text will "zoom" in display */
+    &:hover{
+        .overlay-card__overlay{
+            transform: scale(1);
+        }
+    }
+
+    // contenedor contenido overlay
+    &__content{
+        padding: 15px;
+    }
+    
+    // Icono
+    &__icon{
+        margin-bottom: 17px;
+        max-width: 70px;
+        @include media-query(desktop) {
+            max-width: 90px;
+        }
+    }
+
+    // Texto
+    &__txt{
+        margin: 0;
+        color: $color-white;
+        font-family: 'Bogart';
+        font-weight: $semibold;
+        line-height: 1.125;
+        font-size: 30px;
+        @include media-query(tablet) {
+            font-size: 40px;
+        }
+    }
+
+}

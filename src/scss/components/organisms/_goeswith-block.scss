@@ -1,0 +1,55 @@
+.goeswith-block{
+    margin-top: 34px;
+    margin-bottom: 50px;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    text-align: center;
+
+    @include media-query(desktopL) {
+        margin-top: 76px;
+        margin-bottom: 68px;
+        padding-top: 70px;
+        padding-bottom: 100px;
+    }
+
+    // Titulo
+    &__title{
+        color: $color-white;
+        margin-bottom: 0.7em;
+    }
+
+    // Listado
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        
+        @include media-query(tablet) {
+            justify-content: center;
+            flex-direction: row;
+            gap: 16px;
+        }
+    }
+
+    // Contenedor "Call to action"
+    &__call{
+        margin-top: 20px;
+
+        @include media-query(tablet) {
+            margin-top: 48px;
+        }
+
+        .button{
+            display: inline-flex;
+            width: 100%;
+            min-width: 180px;
+            max-width: 384px;
+            margin-inline: auto;
+            text-decoration: none;
+
+            @include media-query(tablet) {
+                width: auto;
+            }
+        }
+    }
+}

@@ -5,15 +5,101 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include media-query(desktop) {
+            align-items: flex-end;
+        }
     }
 
-    // contenedr texto
+    // contenedor texto
     &__txt{
         text-align: center;
     }
 
-
     &.banner--thumbnail{
+        padding-bottom: 15px;
 
+        .banner__img-list{
+            &.owl-carousel {
+                // Navegación flechas carousel
+                >.owl-nav {
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16.5px;
+
+                    @include media-query(tablet) {
+                        margin-top: 15px;
+                        position: static;
+                        transform: unset;
+                        flex-direction: row;
+                    }
+
+                    button {
+
+                        &.owl-prev,
+                        &.owl-next {
+                            position: static;
+                            transform: unset;
+
+                            @include media-query(tablet) {
+                                background-color: transparent;
+                                
+                                &:hover {
+                                    background-color: $color-blue;
+    
+                                    svg{
+                                        filter: unset;
+                                    }
+                                }
+
+                                svg{
+                                    // https://angel-rs.github.io/css-color-filter-generator/
+                                    // Para filtro color azul
+                                    filter: brightness(0) saturate(100%) invert(22%) sepia(69%) saturate(3204%) hue-rotate(232deg) brightness(89%) contrast(142%);
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                // Navegación thumbnails
+                >.owl-dots {
+                    margin-top: 10px;
+                    position: static;
+                    transform: unset;
+
+                    @include media-query(tablet) {
+                        position: absolute;
+                        top: 5%;
+                        left: 0;
+                        bottom: unset;
+                        flex-direction: column;
+                    }
+
+                    @include media-query(desktop) {
+                        top: 7%;
+                    }
+
+                    .owl-dot{
+                        width: 60px;
+
+                        @include media-query(desktop) {
+                            width: 100px;
+                        }
+
+                        &.active,
+                        &:hover{
+                            border: 3px solid $color-blue;
+                        }
+
+                    }
+
+                }
+            }
+        }
     }
 }
